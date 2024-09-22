@@ -1,5 +1,6 @@
 import styles from './usercard.module.css'
 import { useState } from 'react'
+import avatar from '../../assets/images/image-jeremy.png'
 
 
 export default function UserCard({ setTimePeriod } : { setTimePeriod: (period: string) => void }) {
@@ -13,7 +14,7 @@ export default function UserCard({ setTimePeriod } : { setTimePeriod: (period: s
     return (
         <div className={styles.userCard}>
             <div className={styles.card}>
-                <img className={styles.image} src="src/assets/images/image-jeremy.png" alt="jeremy" />
+                <img className={styles.image} src={avatar} alt="jeremy" />
                 <p className={styles.title}>Report for <br /><span className={styles.name}>Jeremy Robson</span></p>
             </div>
             <div className={styles.timeframes}>

@@ -1,6 +1,7 @@
 import styles from './activitycard.module.css'
 import data from '../../data.json'
 import { useState, useEffect } from 'react'
+import dots from '../../assets/images/icon-ellipsis.svg'
 
 export default function ActivityCard({ timePeriod } : { timePeriod: string }) {
     const [userData, setUserData] = useState(data)
@@ -18,7 +19,7 @@ export default function ActivityCard({ timePeriod } : { timePeriod: string }) {
                 
                     <h2 className={styles.time}>{data.timeframes[`${timePeriod}` as keyof typeof data.timeframes].current}hrs</h2>
                 
-                    <img className={styles.dots} src="src/assets/images/icon-ellipsis.svg" alt="dots"/>
+                    <img className={styles.dots} src={dots} alt="dots"/>
                 
                     <p className={styles.previous}>Last Week - {data.timeframes[`${timePeriod}` as keyof typeof data.timeframes].previous}hrs</p>
                     
