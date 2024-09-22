@@ -1,0 +1,31 @@
+@media screen and (max-width: 47.9rem) {
+    .App {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        gap: 1.5rem;
+    }
+
+    .activityCardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;    
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .App {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5rem;
+    }
+
+    .activityCardContainer {
+        max-width: 51.5625rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
