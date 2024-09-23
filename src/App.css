@@ -25,7 +25,7 @@
     .activityCardContainer {
         max-width: 51.5625rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(10rem, 15.9375rem));
         gap: 1.5rem;
     }
 }

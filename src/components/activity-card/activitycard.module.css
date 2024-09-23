@@ -55,9 +55,10 @@
 }
 
 @media screen and (min-width: 48rem) {
-
+    
     .activityCard {
-        max-width: 15.9375rem;
+       
+        /* max-width: 15.9375rem; */
         border-radius: 0.9375rem;
         padding-top: 2.8125rem;
         background-color: #FF8B64;
